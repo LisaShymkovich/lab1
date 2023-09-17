@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DeveloperCenterComponent } from './developer-center/developer-center.component';
 import { DeveloperListComponent } from './developer-list/developer-list.component';
 import { DeveloperDetailsComponent } from './developer-details/developer-details.component';
-import { DevelopersdevelopersRoutingModule } from '../developersdevelopers-routing.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +15,12 @@ import { DevelopersdevelopersRoutingModule } from '../developersdevelopers-routi
   ],
   imports: [
     CommonModule,
-    DevelopersdevelopersRoutingModule
+    RouterModule
+  ],
+  exports: [
+    DeveloperCenterComponent,
+    DeveloperDetailsComponent,
+    DeveloperListComponent
   ]
 })
 export class DevelopersModule { }

@@ -1,1 +1,18 @@
-<p>developer-details works!</p>
+<!-- <div *ngIf="!developer">
+    <h3>Unknown developer id</h3>
+</div>
+<div *ngIf="developer">
+    <h3>{{ developer.name }}</h3>
+    <p>{{ developer.qualification }}, {{ developer.salary}} $/hr</p>
+</div>
+<a routerLink="">Back</a> -->
+
+
+<div *ngIf="!developer">
+    <h3>Unknown developer id</h3>
+</div>
+<div *ngIf="developer">
+    <h3>{{ developer.name }}</h3>
+    <p>{{ developer.qualification }}, {{ developer.salary }} $/hr</p>
+</div>
+<a routerLink="../">Back</a>
